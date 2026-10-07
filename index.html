@@ -28,15 +28,16 @@
         :root {
             --header-bg: #E07A5F;       /* Теплый терракотовый */
             --header-dark: #C85A3F;     /* Глубокий терракот */
-            --yellow-box: #F4F1DE;      /* Сливочно-песчаный */
+            --yellow-box: #F4F1DE;      /* Слоновая кость / крем */
             --yellow-border: #E0D8B0;
+            --blue-banner: #68C4C6;     /* Сине-бирюзовый цвет как у рамки сертификата */
             --red-banner: #C85A3F;      /* Акцентный терракот */
             --pastel-green: #81B29A;    /* Мягкий шалфейный */
             --turquoise-accent: #E07A5F;/* Терракотовый акцент */
-            --btn-text-dark: #2B2D42;   /* Темно-пастельный цвет для читаемости */
-            --header-text-unified: #2B2D42; /* Единый цвет текста */
+            --btn-text-dark: #2B2D42;   /* Единый темный цвет текста */
+            --header-text-unified: #2B2D42;
             --soft-dark-yellow: #5C4A28;
-            --bg-color: #FDFBF7;        /* Светлая слоновая кость */
+            --bg-color: #FDFBF7;        /* Слоновая кость */
             --card-radius: 20px;
         }
 
@@ -58,9 +59,10 @@
             z-index: 9999;
         }
 
+        /* ФОН С СЕРДЕЧКАМИ ВМЕСТО КРУПНЫХ КРУГОВ И ТОЧКАМИ */
         body {
             background-color: var(--bg-color);
-            background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='5' fill='%23e07a5f' opacity='0.2'/%3E%3Ccircle cx='50' cy='15' r='4' fill='%2381b29a' opacity='0.25'/%3E%3Ccircle cx='60' cy='45' r='6' fill='%23e07a5f' opacity='0.15'/%3E%3Ccircle cx='25' cy='55' r='4.5' fill='%2381b29a' opacity='0.22'/%3E%3Ccircle cx='20' cy='32' r='2.5' fill='%23e07a5f' opacity='0.18'/%3E%3Ccircle cx='55' cy='62' r='3' fill='%2381b29a' opacity='0.2'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,7 C8.2,4.5 5,4.5 5,7.5 C5,10.5 8.2,12.8 10,15 C11.8,12.8 15,10.5 15,7.5 C15,4.5 11.8,4.5 10,7 Z' fill='%23e07a5f' opacity='0.2'/%3E%3Cpath d='M50,12 C48.2,9.5 45,9.5 45,12.5 C45,15.5 48.2,17.8 50,20 C51.8,17.8 55,15.5 55,12.5 C55,9.5 51.8,9.5 50,12 Z' fill='%2381b29a' opacity='0.25'/%3E%3Cpath d='M60,42 C58.2,39.5 55,39.5 55,42.5 C55,45.5 58.2,47.8 60,50 C61.8,47.8 65,45.5 65,42.5 C65,39.5 61.8,39.5 60,42 Z' fill='%23e07a5f' opacity='0.15'/%3E%3Cpath d='M25,52 C23.2,49.5 20,49.5 20,52.5 C20,55.5 23.2,57.8 25,60 C26.8,57.8 30,55.5 30,52.5 C30,49.5 26.8,49.5 25,52 Z' fill='%2381b29a' opacity='0.22'/%3E%3Ccircle cx='20' cy='32' r='2.5' fill='%23e07a5f' opacity='0.18'/%3E%3Ccircle cx='55' cy='62' r='3' fill='%2381b29a' opacity='0.2'/%3E%3C/svg%3E");
             background-attachment: fixed;
             color: var(--header-text-unified);
             padding: 15px 10px;
@@ -71,7 +73,7 @@
         .container {
             width: 100%;
             max-width: 500px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-radius: 28px;
             padding: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -82,14 +84,15 @@
             border-radius: var(--card-radius);
             padding: 18px 15px;
             text-align: center;
-            color: white;
+            color: #FDFBF7;
             position: relative;
             margin-bottom: 15px;
             box-shadow: 0 4px 15px rgba(224, 122, 95, 0.2);
         }
 
+        /* ТРИ ВЕРХНИЕ ПЛАШКИ — СЛОНОВАЯ КОСТЬ И ЕДИНЫЙ ТЕМНЫЙ ТЕКСТ */
         .greeting-box {
-            background: #FFFFFF;
+            background: #FDFBF7;
             color: var(--header-text-unified);
             padding: 12px 16px;
             border-radius: 16px;
@@ -108,12 +111,13 @@
 
         .greeting-text {
             text-align: center;
+            color: var(--header-text-unified);
         }
 
         .fox-avatar-top {
             width: 48px;
             height: 48px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -128,7 +132,7 @@
         .fox-avatar-card {
             width: 48px;
             height: 48px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -147,7 +151,7 @@
         }
 
         .tpr-banner {
-            background: #FFFFFF;
+            background: #FDFBF7;
             color: var(--header-text-unified);
             padding: 8px 12px;
             border-radius: 12px;
@@ -169,7 +173,7 @@
         .header-action-btn {
             width: 100%;
             max-width: 320px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border: none;
             color: var(--header-text-unified);
             padding: 10px 15px;
@@ -189,7 +193,7 @@
         }
 
         .header-action-btn:hover {
-            background: #F8F9FA;
+            background: #F4F1DE;
         }
 
         .parents-settings-wrap {
@@ -197,9 +201,9 @@
         }
 
         .btn-open-parents {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(253, 251, 247, 0.2);
             border: none;
-            color: #FFFFFF;
+            color: #FDFBF7;
             font-size: 11px;
             font-weight: 600;
             text-decoration: underline;
@@ -211,7 +215,7 @@
 
         .btn-open-parents:hover {
             color: #F4F1DE;
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(253, 251, 247, 0.3);
         }
 
         .child-info-box {
@@ -255,9 +259,10 @@
             justify-content: center;
         }
 
+        /* ПЛАШКА С СИНЕ-БИРЮЗОВЫМ ЦВЕТОМ И ТЕКСТОМ ЦВЕТА СЛОНОВОЙ КОСТИ */
         .marathon-banner {
-            background: var(--red-banner);
-            color: white;
+            background: var(--blue-banner);
+            color: #FDFBF7;
             font-weight: 900;
             font-size: 15px;
             padding: 12px;
@@ -276,11 +281,11 @@
             font-weight: 800;
             font-size: 15px;
             width: fit-content;
-            background: #FFFFFF;
+            background: #FDFBF7;
         }
 
         .day-card {
-            background: #FFFFFF;
+            background: #FDFBF7;
             border: 2px solid #E2E8F0;
             border-radius: var(--card-radius);
             padding: 16px;
@@ -298,7 +303,7 @@
 
         .day-card.disabled {
             opacity: 0.5;
-            background: #F8F9FA;
+            background: #F4F1DE;
         }
         
         .day-card.disabled .fox-avatar-card {
@@ -376,7 +381,7 @@
         .btn-audio {
             width: 100%;
             background: var(--pastel-green);
-            color: #FFFFFF;
+            color: #FDFBF7;
             border: none;
             padding: 14px 20px;
             border-radius: 14px;
@@ -432,7 +437,7 @@
         .audio-track-bar {
             flex: 1;
             height: 8px;
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(253, 251, 247, 0.3);
             border-radius: 4px;
             position: relative;
             cursor: pointer;
@@ -445,7 +450,7 @@
         .audio-track-fill {
             width: 0%;
             height: 8px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-radius: 4px;
             position: relative;
             pointer-events: none;
@@ -459,7 +464,7 @@
             transform: translateY(-50%);
             width: 12px;
             height: 12px;
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-radius: 50%;
             box-shadow: 0 1px 3px rgba(0,0,0,0.2);
             pointer-events: none;
@@ -468,7 +473,7 @@
         .audio-timer {
             font-size: 12px;
             font-weight: 800;
-            color: #FFFFFF;
+            color: #FDFBF7;
             min-width: 36px;
             text-align: right;
         }
@@ -493,7 +498,7 @@
 
         .btn-action.completed {
             background: var(--pastel-green);
-            color: #FFFFFF;
+            color: #FDFBF7;
             border: none;
             box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);
         }
@@ -515,7 +520,7 @@
         .btn-certificate {
             width: 100%;
             background: var(--header-bg);
-            color: #FFFFFF;
+            color: #FDFBF7;
             border: none;
             padding: 12px;
             border-radius: 12px;
@@ -538,14 +543,14 @@
             font-weight: 700;
             text-decoration: none;
             padding: 8px 16px;
-            background: #F8F9FA;
+            background: #F4F1DE;
             border: 1px solid #E2E8F0;
             border-radius: 12px;
             transition: all 0.2s ease;
         }
 
         .btn-donate:hover {
-            background: #FFFFFF;
+            background: #FDFBF7;
             border-color: #E07A5F;
             color: #2B2D42;
             box-shadow: 0 2px 8px rgba(224, 122, 95, 0.2);
@@ -563,7 +568,7 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 12px;
             padding: 12px;
-            background: #F8F9FA;
+            background: #F4F1DE;
             border-radius: 16px;
             box-sizing: border-box;
             width: 100%;
@@ -578,7 +583,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #FFFFFF;
+            color: #FDFBF7;
             font-weight: 800;
             font-size: 11px;
             cursor: pointer;
@@ -595,12 +600,12 @@
             min-height: 22px;
             max-width: 36px;
             max-height: 36px;
-            fill: #FFFFFF;
+            fill: #FDFBF7;
             flex-shrink: 0;
         }
 
         .memory-card.flipped {
-            background: #FFFFFF;
+            background: #FDFBF7;
             border: 2px solid var(--header-bg);
             color: #2B2D42;
             padding: 0;
@@ -609,7 +614,7 @@
         .memory-card.matched {
             background: var(--pastel-green);
             border-color: var(--pastel-green);
-            color: #FFFFFF;
+            color: #FDFBF7;
         }
 
         #access-modal {
@@ -626,7 +631,7 @@
             padding: 20px;
         }
         .modal-content {
-            background: #FFFFFF;
+            background: #FDFBF7;
             max-width: 400px;
             width: 100%;
             padding: 25px;
@@ -654,7 +659,7 @@
         }
         .modal-btn {
             background: var(--header-bg);
-            color: #FFFFFF;
+            color: #FDFBF7;
             border: none;
             padding: 12px 20px;
             border-radius: 12px;
@@ -716,8 +721,9 @@
 <div class="container" id="main-app-container">
     
     <div class="header-block">
+        <!-- ВЕРХНЯЯ АВАТАРКА С ЛОГОТИПОМ БЕЗ ЛИСЕНКА -->
         <div class="greeting-box">
-            <img src="logo.png" alt="Лисенок" class="fox-avatar-top" onerror="this.outerHTML='<div class=\'fox-avatar-top\'>🦊</div>'">
+            <img src="logo.png" alt="Логотип" class="fox-avatar-top" onerror="this.style.display='none'">
             <div class="greeting-text">Привет! Поиграем в английский?</div>
         </div>
 
@@ -743,8 +749,9 @@
 
         <div class="progress-bar-container">
             <div class="progress-bar-fill" id="progress-fill" style="width: 0%;">
+                <!-- ЗВЕЗДОЧКА ЦВЕТА ПЛАШКИ СЛУШАТЬ ЗАДАНИЕ (#81B29A) -->
                 <div class="star-marker">
-                    <svg class="svg-icon" style="fill:var(--red-banner); width:33px; height:33px;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="svg-icon" style="fill:var(--pastel-green); width:33px; height:33px;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
             </div>
         </div>
@@ -763,11 +770,11 @@
         </div>
 
         <div id="certificate-preview-box" style="display: none; margin-top: 15px; background: #2B2D42; padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
-            <div style="color: #FFF; margin-bottom: 10px; font-size: 13px; font-weight: 800; line-height: 1.4;">
+            <div style="color: #FDFBF7; margin-bottom: 10px; font-size: 13px; font-weight: 800; line-height: 1.4;">
                 👇 Зажмите картинку пальцем (или кликните правой кнопкой мыши), чтобы сохранить:
             </div>
             <img id="certificate-img-result" src="" alt="Сертификат победителя" style="width: 100%; max-width: 450px; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: block; margin: 0 auto 12px auto; -webkit-touch-callout: default;">
-            <a id="certificate-download-link" href="" download="Certificate.png" style="display: inline-block; background: var(--pastel-green); color: #FFFFFF; padding: 10px 20px; border-radius: 10px; font-weight: 900; text-decoration: none; font-size: 14px; box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);">
+            <a id="certificate-download-link" href="" download="Certificate.png" style="display: inline-block; background: var(--pastel-green); color: #FDFBF7; padding: 10px 20px; border-radius: 10px; font-weight: 900; text-decoration: none; font-size: 14px; box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);">
                 💾 СКАЧАТЬ ФАЙЛ НА УСТРОЙСТВО
             </a>
         </div>
@@ -874,7 +881,6 @@ if (childAge === 2 || childAge === 3 || childAge === 4) {
 document.getElementById('child-name-display').textContent = `${displayName}, ${childAge} ${ageWord}`;
 document.title = `МОДУЛЬ 2 — ${displayName}`;
 
-/* КЛЮЧИ СОХРАНЕНИЯ ДЛЯ МОДУЛЯ 2 */
 const STORAGE_KEY = `tracker_m2_progress_${docId}`;
 const MEMORY_LAYOUT_KEY = `tracker_m2_memory_layout_${docId}`;
 const MEMORY_MATCHED_KEY = `tracker_m2_memory_matched_${docId}`;
@@ -1331,9 +1337,9 @@ function openAndPrintColoring() {
                 <meta charset="UTF-8">
                 <title>Раскраска — ${displayName}</title>
                 <style>
-                    body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #FFFFFF; }
+                    body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #FDFBF7; }
                     img { max-width: 95vw; max-height: 95vh; object-fit: contain; }
-                    @media print { body { background: #FFFFFF; } img { max-width: 100%; max-height: 100%; } }
+                    @media print { body { background: #FDFBF7; } img { max-width: 100%; max-height: 100%; } }
                 </style>
             </head>
             <body>
@@ -1345,7 +1351,7 @@ function openAndPrintColoring() {
     }
 }
 
-/* СЕРТИФИКАТ ДЛЯ МОДУЛЯ 2 (ТЕПЛЫЙ ТЕРРАКОТ) */
+/* СЕРТИФИКАТ ДЛЯ МОДУЛЯ 2 */
 function generateCertificate() {
     const btn = document.getElementById('cert-btn');
     btn.textContent = '⏳ Создаем сертификат...';
@@ -1376,7 +1382,7 @@ function generateCertificate() {
             min-width: 580px;
             height: 840px;
             min-height: 840px;
-            background-color: #FFFFFF;
+            background-color: #FDFBF7;
             background-image: url('pattern.png');
             background-repeat: repeat;
             overflow: hidden;
@@ -1410,7 +1416,7 @@ function generateCertificate() {
                 </div>
 
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="fox_certificate.png" crossorigin="anonymous" style="width: 75px; height: 75px; background: #FFFFFF; border-radius: 50%; border: 3px solid #E07A5F; object-fit: cover;" onerror="this.outerHTML='<div style=\'width:75px;height:75px;background:#fff;border-radius:50%;border:3px solid #E07A5F;display:flex;align-items:center;justify-content:center;font-size:30px;\'>🦊🕵️‍♂️</div>'">
+                    <img src="fox_certificate.png" crossorigin="anonymous" style="width: 75px; height: 75px; background: #FDFBF7; border-radius: 50%; border: 3px solid #E07A5F; object-fit: cover;" onerror="this.outerHTML='<div style=\'width:75px;height:75px;background:#FDFBF7;border-radius:50%;border:3px solid #E07A5F;display:flex;align-items:center;justify-content:center;font-size:30px;\'>🦊🕵️‍♂️</div>'">
                 </div>
 
                 <div style="width: 100%; padding: 10px 16px; background: #F4F1DE; border-radius: 16px; border: 2px dashed #E07A5F; text-align: center; box-sizing: border-box; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
