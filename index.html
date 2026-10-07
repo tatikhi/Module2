@@ -30,7 +30,7 @@
             --header-dark: #C85A3F;     /* Глубокий терракот */
             --yellow-box: #F4F1DE;      /* Тёплая слоновая кость */
             --yellow-border: #E0D8B0;
-            --blue-banner: #2B2D42;     /* Тёмно-синий цвет как у широкой рамки вокруг сертификата */
+            --blue-banner: #2B2D42;     /* Тёмно-синий цвет */
             --red-banner: #C85A3F;      /* Акцентный терракот */
             --pastel-green: #81B29A;    /* Мягкий шалфейный */
             --turquoise-accent: #E07A5F;/* Терракотовый акцент */
@@ -78,7 +78,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
-        /* БОЛЬШАЯ ПЛАШКА: ШАЛФЕЙНО-ЗЕЛЕНАЯ (КАК КНОПКА СЛУШАТЬ ЗАДАНИЕ) */
+        /* БОЛЬШАЯ ПЛАШКА: ШАЛФЕЙНО-ЗЕЛЕНАЯ */
         .header-block {
             background: var(--pastel-green);
             border-radius: var(--card-radius);
@@ -312,13 +312,13 @@
         }
 
         .day-card.completed {
-            border-color: var(--pastel-green);
+            border-color: #2B2D42;
             background: #F4F8F6;
         }
 
         .day-card.completed .fox-avatar-card {
-            background: var(--pastel-green);
-            border-color: var(--pastel-green);
+            background: #2B2D42;
+            border-color: #2B2D42;
         }
 
         .card-top {
@@ -379,9 +379,10 @@
             margin-bottom: 10px;
         }
 
+        /* КНОПКА СЛУШАТЬ ЗАДАНИЕ: ТЁМНО-СИНЯЯ (#2B2D42) */
         .btn-audio {
             width: 100%;
-            background: var(--pastel-green);
+            background: #2B2D42;
             color: #FDFBF7;
             border: none;
             padding: 14px 20px;
@@ -394,7 +395,7 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 4px 10px rgba(129, 178, 154, 0.25);
+            box-shadow: 0 4px 10px rgba(43, 45, 66, 0.25);
             transition: transform 0.1s ease, background-color 0.3s ease, opacity 0.2s ease, box-shadow 0.3s ease;
         }
 
@@ -497,11 +498,12 @@
             box-shadow: 0 2px 6px rgba(224, 216, 176, 0.3);
         }
 
+        /* КНОПКА ПОБЕДА!: ТЁМНО-СИНЯЯ (#2B2D42) */
         .btn-action.completed {
-            background: var(--pastel-green);
+            background: #2B2D42;
             color: #FDFBF7;
             border: none;
-            box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);
+            box-shadow: 0 4px 10px rgba(43, 45, 66, 0.3);
         }
 
         @keyframes trophyJump {
@@ -613,8 +615,8 @@
         }
 
         .memory-card.matched {
-            background: var(--pastel-green);
-            border-color: var(--pastel-green);
+            background: #2B2D42;
+            border-color: #2B2D42;
             color: #FDFBF7;
         }
 
