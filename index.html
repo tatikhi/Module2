@@ -312,13 +312,13 @@
         }
 
         .day-card.completed {
-            border-color: #2B2D42;
+            border-color: var(--pastel-green);
             background: #F4F8F6;
         }
 
         .day-card.completed .fox-avatar-card {
-            background: #2B2D42;
-            border-color: #2B2D42;
+            background: var(--pastel-green);
+            border-color: var(--pastel-green);
         }
 
         .card-top {
@@ -379,11 +379,11 @@
             margin-bottom: 10px;
         }
 
-        /* КНОПКА СЛУШАТЬ ЗАДАНИЕ: ТЁМНО-СИНЯЯ (#2B2D42) */
+        /* КНОПКА СЛУШАТЬ ЗАДАНИЕ: ШАЛФЕЙНЫЙ ФОН, ТЁМНО-СИНИЙ ТЕКСТ (#2B2D42) */
         .btn-audio {
             width: 100%;
-            background: #2B2D42;
-            color: #FDFBF7;
+            background: var(--pastel-green);
+            color: #2B2D42;
             border: none;
             padding: 14px 20px;
             border-radius: 14px;
@@ -395,12 +395,13 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 4px 10px rgba(43, 45, 66, 0.25);
+            box-shadow: 0 4px 10px rgba(129, 178, 154, 0.25);
             transition: transform 0.1s ease, background-color 0.3s ease, opacity 0.2s ease, box-shadow 0.3s ease;
         }
 
         .btn-audio.playing {
             background: var(--header-bg) !important;
+            color: #FDFBF7 !important;
             box-shadow: 0 4px 10px rgba(224, 122, 95, 0.3) !important;
         }
 
@@ -439,7 +440,7 @@
         .audio-track-bar {
             flex: 1;
             height: 8px;
-            background: rgba(253, 251, 247, 0.3);
+            background: rgba(43, 45, 66, 0.2);
             border-radius: 4px;
             position: relative;
             cursor: pointer;
@@ -452,7 +453,7 @@
         .audio-track-fill {
             width: 0%;
             height: 8px;
-            background: #FDFBF7;
+            background: #2B2D42;
             border-radius: 4px;
             position: relative;
             pointer-events: none;
@@ -466,7 +467,7 @@
             transform: translateY(-50%);
             width: 12px;
             height: 12px;
-            background: #FDFBF7;
+            background: #2B2D42;
             border-radius: 50%;
             box-shadow: 0 1px 3px rgba(0,0,0,0.2);
             pointer-events: none;
@@ -475,7 +476,7 @@
         .audio-timer {
             font-size: 12px;
             font-weight: 800;
-            color: #FDFBF7;
+            color: #2B2D42;
             min-width: 36px;
             text-align: right;
         }
@@ -498,12 +499,12 @@
             box-shadow: 0 2px 6px rgba(224, 216, 176, 0.3);
         }
 
-        /* КНОПКА ПОБЕДА!: ТЁМНО-СИНЯЯ (#2B2D42) */
+        /* КНОПКА ПОБЕДА!: ШАЛФЕЙНЫЙ ФОН, ТЁМНО-СИНИЙ ТЕКСТ (#2B2D42) */
         .btn-action.completed {
-            background: #2B2D42;
-            color: #FDFBF7;
+            background: var(--pastel-green);
+            color: #2B2D42;
             border: none;
-            box-shadow: 0 4px 10px rgba(43, 45, 66, 0.3);
+            box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);
         }
 
         @keyframes trophyJump {
@@ -615,9 +616,9 @@
         }
 
         .memory-card.matched {
-            background: #2B2D42;
-            border-color: #2B2D42;
-            color: #FDFBF7;
+            background: var(--pastel-green);
+            border-color: var(--pastel-green);
+            color: #2B2D42;
         }
 
         #access-modal {
@@ -778,7 +779,7 @@
                 👇 Зажмите картинку пальцем (или кликните правой кнопкой мыши), чтобы сохранить:
             </div>
             <img id="certificate-img-result" src="" alt="Сертификат победителя" style="width: 100%; max-width: 450px; height: auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: block; margin: 0 auto 12px auto; -webkit-touch-callout: default;">
-            <a id="certificate-download-link" href="" download="Certificate.png" style="display: inline-block; background: var(--pastel-green); color: #FDFBF7; padding: 10px 20px; border-radius: 10px; font-weight: 900; text-decoration: none; font-size: 14px; box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);">
+            <a id="certificate-download-link" href="" download="Certificate.png" style="display: inline-block; background: var(--pastel-green); color: #2B2D42; padding: 10px 20px; border-radius: 10px; font-weight: 900; text-decoration: none; font-size: 14px; box-shadow: 0 4px 10px rgba(129, 178, 154, 0.3);">
                 💾 СКАЧАТЬ ФАЙЛ НА УСТРОЙСТВО
             </a>
         </div>
