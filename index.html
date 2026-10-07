@@ -89,7 +89,6 @@
             box-shadow: 0 4px 15px rgba(224, 122, 95, 0.2);
         }
 
-        /* ВЕРХНИЕ ТРИ ПЛАШКИ — СЛОНОВАЯ КОСТЬ (#F4F1DE) И ЕДИНЫЙ ТЕМНЫЙ ТЕКСТ (#2B2D42) */
         .greeting-box {
             background: #F4F1DE;
             color: var(--header-text-unified);
@@ -217,7 +216,6 @@
             background: rgba(244, 241, 222, 0.4);
         }
 
-        /* ИМЯ РЕБЕНКА И КОЛИЧЕСТВО ЗАДАНИЙ */
         .child-info-box {
             background: var(--yellow-box);
             border: none;
@@ -242,8 +240,9 @@
             margin-bottom: 12px;
         }
 
+        /* ШКАЛА ПРОГРЕССА В ЦВЕТ КНОПКИ СЛУШАТЬ ЗАДАНИЕ (#81B29A) */
         .progress-bar-fill {
-            background: var(--yellow-border);
+            background: var(--pastel-green);
             height: 100%;
             border-radius: 10px;
             position: relative;
@@ -1390,7 +1389,7 @@ function generateCertificate() {
             border-radius: 28px;
             padding: 30px 35px;
             box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-            border: 6px solid #68C4C6;
+            border: 6px solid #C85A3F;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -1417,14 +1416,14 @@ function generateCertificate() {
                 </div>
 
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="fox_certificate.png" crossorigin="anonymous" style="width: 75px; height: 75px; background: #FDFBF7; border-radius: 50%; border: 3px solid #68C4C6; object-fit: cover;" onerror="this.outerHTML='<div style=\'width:75px;height:75px;background:#FDFBF7;border-radius:50%;border:3px solid #68C4C6;display:flex;align-items:center;justify-content:center;font-size:30px;\'>🦊🕵️‍♂️</div>'">
+                    <img src="fox_certificate.png" crossorigin="anonymous" style="width: 75px; height: 75px; background: #FDFBF7; border-radius: 50%; border: 3px solid #C85A3F; object-fit: cover;" onerror="this.outerHTML='<div style=\'width:75px;height:75px;background:#FDFBF7;border-radius:50%;border:3px solid #C85A3F;display:flex;align-items:center;justify-content:center;font-size:30px;\'>🦊🕵️‍♂️</div>'">
                 </div>
 
-                <div style="width: 100%; padding: 10px 16px; background: #F4F1DE; border-radius: 16px; border: 2px dashed #68C4C6; text-align: center; box-sizing: border-box; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                <div style="width: 100%; padding: 10px 16px; background: #F4F1DE; border-radius: 16px; border: 2px dashed #C85A3F; text-align: center; box-sizing: border-box; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
                     <div style="font-size: 11px; font-weight: 700; color: #2B2D42; margin-bottom: 2px;">ПОЛУЧАЕТ:</div>
-                    <div style="font-size: 22px; font-weight: 900; color: #2B2D42; border-bottom: 2px solid #68C4C6; width: 100%; margin: 0 auto 3px auto; padding-bottom: 2px; letter-spacing: 1px; display: flex; align-items: center; justify-content: center;">${displayName} (${childAge} ${ageWord})</div>
+                    <div style="font-size: 22px; font-weight: 900; color: #2B2D42; border-bottom: 2px solid #C85A3F; width: 100%; margin: 0 auto 3px auto; padding-bottom: 2px; letter-spacing: 1px; display: flex; align-items: center; justify-content: center;">${displayName} (${childAge} ${ageWord})</div>
                     <div style="font-size: 12px; font-weight: 800; color: #2B2D42; line-height: 1.2; margin-bottom: 3px;">За любознательность, отличную память, внимательность<br>и успешное прохождение всех заданий квеста! 🕵️‍♂️🌟</div>
-                    <div style="font-size: 10px; font-weight: 800; color: #C85A3F; text-align: right; width: 100%; padding-right: 5px;">${currentMonth}, ${currentYear} года</div>
+                    <div style="font-size: 10px; font-weight: 800; color: #2B2D42; text-align: right; width: 100%; padding-right: 5px;">${currentMonth}, ${currentYear} года</div>
                 </div>
 
             </div>
