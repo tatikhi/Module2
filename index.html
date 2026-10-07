@@ -30,7 +30,7 @@
             --header-dark: #C85A3F;     /* Глубокий терракот */
             --yellow-box: #F4F1DE;      /* Тёплая слоновая кость */
             --yellow-border: #E0D8B0;
-            --blue-banner: #68C4C6;     /* Тёмно-синий / бирюзовый как у рамки сертификата */
+            --blue-banner: #2B2D42;     /* Тёмно-синий цвет как у широкой рамки вокруг сертификата */
             --red-banner: #C85A3F;      /* Акцентный терракот */
             --pastel-green: #81B29A;    /* Мягкий шалфейный */
             --turquoise-accent: #E07A5F;/* Терракотовый акцент */
@@ -89,7 +89,7 @@
             box-shadow: 0 4px 15px rgba(224, 122, 95, 0.2);
         }
 
-        /* ВЕРХНИЕ ТРИ ПЛАШКИ — ЯВНАЯ СЛОНОВАЯ КОСТЬ (#F4F1DE) И ЕДИНЫЙ ТЕМНЫЙ ТЕКСТ (#2B2D42) */
+        /* ВЕРХНИЕ ТРИ ПЛАШКИ — СЛОНОВАЯ КОСТЬ (#F4F1DE) И ЕДИНЫЙ ТЕМНЫЙ ТЕКСТ (#2B2D42) */
         .greeting-box {
             background: #F4F1DE;
             color: var(--header-text-unified);
@@ -217,7 +217,7 @@
             background: rgba(244, 241, 222, 0.4);
         }
 
-        /* ИМЯ РЕБЕНКА И КОЛИЧЕСТВО ЗАДАНИЙ — ТОГО ЖЕ ЦВЕТА ЧТО И ВЕРХНИЙ ТЕКСТ ПРИВЕТСТВИЯ (#2B2D42) */
+        /* ИМЯ РЕБЕНКА И КОЛИЧЕСТВО ЗАДАНИЙ */
         .child-info-box {
             background: var(--yellow-box);
             border: none;
@@ -259,7 +259,7 @@
             justify-content: center;
         }
 
-        /* ПЛАШКА МОДУЛЯ — ТЁМНО-СИНЯЯ (#68C4C6) КАК РАМКА СЕРТИФИКАТА, ТЕКСТ СЛОНОВАЯ КОСТЬ (#FDFBF7) */
+        /* ПЛАШКА МОДУЛЯ: ТЁМНО-СИНЯЯ (#2B2D42), ТЕКСТ СЛОНОВАЯ КОСТЬ (#FDFBF7) */
         .marathon-banner {
             background: var(--blue-banner);
             color: #FDFBF7;
@@ -749,14 +749,14 @@
 
         <div class="progress-bar-container">
             <div class="progress-bar-fill" id="progress-fill" style="width: 0%;">
-                <!-- ЗВЕЗДОЧКА ТЁМНО-СИНЕГО ЦВЕТА (#68C4C6) -->
+                <!-- ЗВЕЗДОЧКА ТЁМНО-СИНЕГО ЦВЕТА (#2B2D42) -->
                 <div class="star-marker">
                     <svg class="svg-icon" style="fill:var(--blue-banner); width:33px; height:33px;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
             </div>
         </div>
 
-        <!-- ПЛАШКА МОДУЛЯ: ТЁМНО-СИНЯЯ С ТЕКСТОМ ЦВЕТА СЛОНОВОЙ КОСТИ -->
+        <!-- ПЛАШКА МОДУЛЯ: ТЁМНО-СИНЯЯ (#2B2D42) С ТЕКСТОМ ЦВЕТА СЛОНОВОЙ КОСТИ (#FDFBF7) -->
         <div class="marathon-banner">МОДУЛЬ 2 • ДОМАШНИЙ КВЕСТ</div>
     </div>
 
